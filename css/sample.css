@@ -1,0 +1,203 @@
+
+
+
+/* header{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+    ------------------------------------------ */
+
+/* Header
+------------------------------------------ */
+
+.site-header {
+  display: flex;
+  align-items: right;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 5px ;
+  background-color: #0066CC;
+}
+
+
+.site-logo {
+  margin: 0;
+  color: hsl(0, 0%, 100%);
+  font-size: 24px;
+  white-space: nowrap;
+}
+
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav a {
+  color: hsl(0, 0%, 100%);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: #a34b32;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+
+/* body
+------------------------------------------ */
+
+
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+}
+
+
+/* main
+------------------------------------------ */
+
+
+main{
+    border-bottom:1px solid #ccc;
+    position:relative;
+}
+
+
+.register{
+    text-align: center;
+    font-size: 32px;
+
+
+}
+
+
+p{
+    font-size:200%;
+    text-align: center;
+    border-bottom:1px solid #fff;
+    height:200px;
+}
+ul{
+    padding: 0;
+    border-top: 1px solid #000000;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+}
+
+
+.save-clear {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #666;
+  }
+
+  .save-clear li {
+    flex: 1;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+  .save-clear li + li {
+    border-left: 1px solid #666;
+  }
+
+  .save-clear li:hover {
+    background: #0066CC;
+    color:#fff;
+}
+textarea{
+  margin: 3%;
+  width: 95%;
+  height: 230px;
+  font-size:80%;
+}
+
+
+
+.contact-form {
+  width: min(100%, 520px);
+  margin: 0 auto;
+  padding: 0 0 16px;
+  font-size: 13px;
+  text-align: left;
+}
+
+.contact-form form {
+  display: grid;
+  gap: 14px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 105px minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+}
+
+.photo-field {
+  display: grid;
+  grid-template-columns: 105px minmax(0, 1fr);
+  align-items: start;
+  gap: 16px;
+}
+
+.photo-controls {
+  display: grid;
+  min-width: 0;
+  gap: 8px;
+}
+
+.photo-controls input {
+  max-width: 100%;
+  font: inherit;
+}
+
+.photo-preview {
+  display: block;
+  max-width: 100%;
+  max-height: 240px;
+  object-fit: contain;
+  object-position: left center;
+  border: 1px solid #ccc;
+}
+
+.photo-preview[hidden],
+.photo-error[hidden] {
+  display: none;
+}
+
+.photo-error {
+  margin: 0;
+  color: #b00020;
+  font-size: 13px;
+}
+
+
+/* footer
+------------------------------------------ */
+
+footer{
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+    font-size: 16px;
+}
